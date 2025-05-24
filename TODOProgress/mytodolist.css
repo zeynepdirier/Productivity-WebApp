@@ -1,5 +1,5 @@
 body {
-  background-image: url("w2.jpg");
+  background-image: url("s2.jpg");
 
   background-color: rgba(0, 0, 0, 1);
   background-position: center;
@@ -24,12 +24,12 @@ body {
   font-weight: 100;
 
   text-align: center;
-  color: rgb(41, 125, 143);
+  color: #fffdee;
 }
 .todo-title {
   margin-top: 60px;
   font-size: 33px;
-  color: #316573;
+  color: #f8f8f8;
   font-weight: bold;
 }
 
@@ -158,8 +158,8 @@ body {
   color: rgba(0, 0, 0, 0.2);
   background: linear-gradient(
     120deg,
-    hsl(198, 66%, 86%) 0%,
-    hsl(198, 66%, 86%) 100%
+    hsl(359, 43%, 70%) 0%,
+    hsl(359, 43%, 70%) 100%
   );
   background-repeat: no-repeat;
   background-size: 100% 50%;
@@ -212,7 +212,7 @@ body {
   justify-content: center;
   height: 28px;
   align-items: center;
-  background-color: rgb(221, 167, 151);
+  background-color: #c45c5c;
   text-align: center;
   color: rgb(255, 255, 255);
 }
@@ -249,11 +249,11 @@ body {
   margin: 7px;
 }
 .day-button:hover {
-  background-color: hsl(198, 66%, 86%);
+  background-color: #bcb79f;
   color: white;
 }
 
 .selected {
-  background-color: rgb(41, 125, 143);
+  background-color: #bcb79f;
   color: white;
 }
