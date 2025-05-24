@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="mytodolist.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Text:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Yanone+Kaffeesatz:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="title">TO-DO LIST</div>
+
+    <div class="js-todo-title todo-title" contenteditable="true">
+      My To-Do's
+    </div>
+    <div class="js-week-container week-container">
+      <div class="js-Monday Monday day-container">
+        <button class="Monday day-button" onclick="selectDay('Monday')">
+          MO
+        </button>
+      </div>
+      <div class="js-Tuesday Tuesday day-container">
+        <button class="Tuesday day-button" onclick="selectDay('Tuesday')">
+          TU
+        </button>
+      </div>
+      <div class="js-Wednesday Wednesday day-container">
+        <button class="Wednesday day-button" onclick="selectDay('Wednesday')">
+          WE
+        </button>
+      </div>
+      <div class="js-Thursday Thursday day-container">
+        <button class="Thursday day-button" onclick="selectDay('Thursday')">
+          TH
+        </button>
+      </div>
+      <div class="js-Friday Friday day-container">
+        <button class="Friday day-button" onclick="selectDay('Friday')">
+          FR
+        </button>
+      </div>
+      <div class="js-Saturday Saturday day-container">
+        <button class="Saturday day-button" onclick="selectDay('Saturday')">
+          SA
+        </button>
+      </div>
+      <div class="js-Sunday Sunday day-container">
+        <button class="Sunday day-button" onclick="selectDay('Sunday')">
+          SU
+        </button>
+      </div>
+    </div>
+
+    <div class="js-progress-bar progress-bar">
+      <div class="js-progress progress"></div>
+    </div>
+
+    <input
+      placeholder="TO-DO"
+      class="js-get-tasks get-tasks"
+      onkeydown="pressEnter(event)"
+    />
+
+    <div class="js-inputContainer inputContainer"></div>
+    <div class="js-todo-list todo-list"></div>
+
+    <script src="mytodolist.js"></script>
+  </body>
+</html>

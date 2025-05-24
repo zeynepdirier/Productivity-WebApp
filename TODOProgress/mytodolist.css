@@ -1,0 +1,259 @@
+body {
+  background-image: url("w2.jpg");
+
+  background-color: rgba(0, 0, 0, 1);
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+#curve {
+  fill: transparent;
+}
+.text {
+  font-size: 3rem;
+  fill: white;
+}
+.title {
+  padding: 40px;
+  font-size: 100px;
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 100;
+
+  text-align: center;
+  color: rgb(41, 125, 143);
+}
+.todo-title {
+  margin-top: 60px;
+  font-size: 33px;
+  color: #316573;
+  font-weight: bold;
+}
+
+.get-tasks {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid rgb(255, 253, 238);
+  outline: 0;
+  font-size: 15px;
+  color: white;
+  padding: 10px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  width: 355px;
+  text-align: center;
+}
+
+.todo-item:hover .delete-button {
+  display: inline-block;
+}
+
+.delete-button {
+  display: none;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  line-height: 25px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  overflow: hidden; /* Taşan içerikleri gizle */
+}
+
+.delete-button:hover {
+  box-shadow: none;
+}
+.delete-button img {
+  width: 100%; /* Görseli buton boyutuna sığacak şekilde ayarla */
+  height: auto; /* Yüksekliği otomatik ayarla */
+  display: block;
+}
+
+.check-button {
+  display: none;
+  padding: 0; /* Padding'i kaldırarak daha fazla iç alan sağlayın */
+  width: 18px; /* Buton genişliğini artırın */
+  height: 18px; /* Buton yüksekliğini artırın */
+  line-height: 25px; /* İçeriği dikey olarak ortalamak için */
+  border: none;
+  background: none;
+  cursor: pointer;
+  overflow: hidden; /* Taşan içerikleri gizle */
+}
+
+.todo-item:hover .check-button {
+  display: block;
+}
+
+.check-button img {
+  width: 100%; /* Görseli buton boyutuna sığacak şekilde ayarla */
+  height: auto; /* Yüksekliği otomatik ayarla */
+  display: block;
+}
+.sub-button {
+  display: none;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  line-height: 25px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  overflow: hidden; /* Taşan içerikleri gizle */
+}
+
+.next-button {
+  display: none;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  line-height: 25px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  overflow: hidden; /* Taşan içerikleri gizle */
+}
+.todo-item:hover .next-button {
+  display: block;
+}
+
+.next-button:hover {
+  box-shadow: none;
+}
+.next-button img {
+  width: 100%; /* Görseli buton boyutuna sığacak şekilde ayarla */
+  height: auto; /* Yüksekliği otomatik ayarla */
+  display: block;
+}
+
+.todo-item:hover .sub-button {
+  display: block;
+}
+.todo-item > *:not(:first-child) {
+  margin-left: 5px;
+}
+
+.sub-button img {
+  width: 100%; /* Görseli buton boyutuna sığacak şekilde ayarla */
+  height: auto; /* Yüksekliği otomatik ayarla */
+  display: block;
+}
+
+.todo-item {
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  align-items: left;
+  justify-content: space-between;
+  border: none;
+  max-width: 525px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.done {
+  color: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(
+    120deg,
+    hsl(198, 66%, 86%) 0%,
+    hsl(198, 66%, 86%) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  background-position: 0 60%;
+}
+.todo-content {
+  flex-grow: 1; /* İçerik div'ini genişlet ve içeriği merkeze al */
+  text-align: left; /* Metni merkeze hizala */
+}
+
+.todo-list {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+  grid-template-columns: 170px 5px;
+  column-gap: 10px;
+  row-gap: 2px;
+  align-items: left;
+  text-align: left;
+  margin-top: 15px;
+}
+
+&::placeholder {
+  color: transparent;
+}
+
+[contenteditable="true"]:focus {
+  outline: none; /* Odaklandığında çerçeveyi kaldır */
+  cursor: text; /* Düzenlerken imleç tipini metin olarak belirt */
+  caret-color: rgb(196, 92, 92);
+}
+
+.progress-bar {
+  display: none;
+  width: 355px;
+  margin: 28px auto;
+  align-items: center;
+  background-color: rgb(245, 238, 225);
+  text-align: center;
+}
+
+.progress {
+  display: none;
+
+  width: 355px;
+
+  font-size: 15px;
+  justify-content: center;
+  height: 28px;
+  align-items: center;
+  background-color: rgb(221, 167, 151);
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.week-container {
+  display: flex;
+  width: 100%;
+  max-width: 550px;
+  align-items: center;
+  justify-content: space-around; /* Boşlukları düzenler */
+
+  margin: 28px auto;
+}
+
+.day-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.day-button {
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  border: none;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 650;
+  font-size: 15px;
+  color: rgb(41, 50, 52);
+  background-color: rgb(245, 238, 225);
+  cursor: pointer;
+  margin: 7px;
+}
+.day-button:hover {
+  background-color: hsl(198, 66%, 86%);
+  color: white;
+}
+
+.selected {
+  background-color: rgb(41, 125, 143);
+  color: white;
+}
